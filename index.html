@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Xinxiang Wang - 个人网站，展示我的项目、技能和经历">
-    <meta name="keywords" content="Xinxiang Wang, 个人网站, 开发者, 项目展示">
+    <meta name="description" content="Xinxiang Wang - AI研究者的学术博客，分享研究成果、学习心得和文献阅读">
+    <meta name="keywords" content="Xinxiang Wang, AI研究, 大语言模型, 学术博客, 科研日常">
     <meta name="author" content="Xinxiang Wang">
-    <title>Xinxiang Wang - 个人网站</title>
+    <title>Xinxiang Wang - AI研究者的学术空间</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/academic-style.css">
     
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -26,22 +26,23 @@
         <div class="nav-container">
             <div class="nav-logo">
                 <a href="#home">Xinxiang Wang</a>
+                <span class="nav-subtitle">AI Researcher</span>
             </div>
             <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">首页</a>
-                </li>
                 <li class="nav-item">
                     <a href="#about" class="nav-link">关于我</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#projects" class="nav-link">项目</a>
+                    <a href="#research" class="nav-link">研究成果</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#skills" class="nav-link">技能</a>
+                    <a href="#blog" class="nav-link">科研日常</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact" class="nav-link">联系</a>
+                    <a href="#papers" class="nav-link">文献阅读</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">联系我</a>
                 </li>
             </ul>
             <div class="nav-toggle" id="mobile-menu">
@@ -52,33 +53,34 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    你好，我是 <span class="highlight">Xinxiang Wang</span>
-                </h1>
-                <p class="hero-subtitle">
-                    AI研究员 | 大语言模型专家 | 科学计算开发者
-                </p>
-                <p class="hero-description">
-                    专注于大语言模型与智能体系统、AI for Science领域的研究与应用，致力于推动人工智能在科学发现中的创新应用。
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">查看项目</a>
-                    <a href="#contact" class="btn btn-secondary">联系我</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="profile-card">
-                    <div class="profile-img">
-                        <img src="assets/profile.jpg" alt="Xinxiang Wang" id="profile-photo">
+    <!-- Header Section -->
+    <header id="home" class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="profile-section">
+                    <div class="profile-image">
+                        <img src="assets/profile.jpg" alt="Xinxiang Wang">
+                    </div>
+                    <div class="profile-info">
+                        <h1 class="name">Xinxiang Wang</h1>
+                        <p class="title">AI Researcher & PhD Candidate</p>
+                        <p class="affiliation">专注于大语言模型与智能体系统研究</p>
+                        <div class="contact-links">
+                            <a href="mailto:lsxinxiangwang@uic.edu.cn" class="contact-link">
+                                <i class="fas fa-envelope"></i> Email
+                            </a>
+                            <a href="https://github.com/yiyabo" class="contact-link" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="docs/CV_Xinxiang Wang.pdf" class="contact-link" target="_blank">
+                                <i class="fas fa-file-pdf"></i> CV
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </header>
 
     <!-- About Section -->
     <section id="about" class="about">
@@ -87,150 +89,257 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        我是一名专注于人工智能研究的开发者，主要研究方向包括大语言模型与智能体系统、
-                        以及AI在科学计算中的应用。目前致力于检索增强推理、自主智能体和多智能体协作等前沿技术。
+                        我是一名专注于人工智能研究的学者，目前的研究兴趣主要集中在<span class="highlight-text">大语言模型与智能体系统</span>以及<span class="highlight-text">AI for Science</span>两个前沿领域。
+                        我相信人工智能不仅能够改变我们处理信息的方式，更能够加速科学发现的进程。
                     </p>
                     <p>
-                        拥有数据科学与大数据技术学士学位，在学术研究和工业应用方面都有丰富经验。
-                        曾在深圳山见智能科技担任Python后端开发工程师，专注于LLM和智能体系统的开发与优化。
+                        在学术道路上，我致力于将理论研究与实际应用相结合。从湖南交通工程学院的数据科学与大数据技术专业毕业后，
+                        我在深圳山见智能科技有限公司担任Python后端开发工程师，专注于LLM和智能体系统的工程化实现。
+                        这段经历让我深刻理解了从研究到产品化的完整链条。
                     </p>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <h3>3+</h3>
-                            <p>研究项目</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>6+</h3>
-                            <p>发表论文</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>3+</h3>
-                            <p>专利申请</p>
-                        </div>
+                    <div class="quote">
+                        "研究的意义不仅在于发现新知识，更在于用这些知识去解决真实世界的问题。"
+                    </div>
+                </div>
+                
+                <div class="research-interests">
+                    <h3>研究兴趣</h3>
+                    <ul>
+                        <li><strong>大语言模型与智能体系统：</strong>检索增强推理、自主智能体、多智能体协作</li>
+                        <li><strong>AI for Science：</strong>生成建模、物理信息学习、领域特定基础模型</li>
+                        <li><strong>应用研究：</strong>生物信息学、药物发现、科学计算加速</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="research">
+        <div class="container">
+            <h2 class="section-title">研究成果</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <h3>SyAGram: 双组件抗革兰阴性菌抗菌肽框架</h3>
+                    <span class="status under-review">Under Review at IEEE BIBM 2025</span>
+                    <p>
+                        提出了一个创新的双组件框架，专门针对抗革兰阴性菌抗菌肽的分类和生成。
+                        该框架结合了BiLSTM分类器和ESM-2引导的离散扩散生成器，实现了91.53% AUC的分类精度，
+                        生成的肽段具有92%的预测活性和62.3%的高置信度。
+                    </p>
+                    <div class="research-tags">
+                        <span class="research-tag">First Author</span>
+                        <span class="research-tag">BiLSTM</span>
+                        <span class="research-tag">ESM-2</span>
+                        <span class="research-tag">Diffusion Model</span>
+                    </div>
+                </div>
+
+                <div class="research-card">
+                    <h3>PHESA: 物理信息分层边集注意力模型</h3>
+                    <span class="status under-review">Under Review at IEEE BIBM 2025</span>
+                    <p>
+                        开发了一个基于物理信息的分层边集注意力框架，用于蛋白质-配体结合亲和力预测。
+                        该模型在PDBbind数据集上达到了SOTA性能（Pearson相关系数0.795），
+                        并且可以迁移到蛋白质-蛋白质相互作用亲和力任务。
+                    </p>
+                    <div class="research-tags">
+                        <span class="research-tag">Second Author</span>
+                        <span class="research-tag">Graph Neural Networks</span>
+                        <span class="research-tag">Physics-informed ML</span>
+                        <span class="research-tag">Attention Mechanism</span>
+                    </div>
+                </div>
+
+                <div class="research-card">
+                    <h3>GAgent: 分层任务分解智能体框架</h3>
+                    <span class="status in-progress">Targeting UbiComp/ISWC 2025</span>
+                    <p>
+                        设计了一个分层任务分解框架来缓解大语言模型在复杂工作流中的错误。
+                        通过将复杂任务分解为最小原子单元，防止了扩展上下文导致的质量恶化，
+                        实现了40%的错误减少和92%的成功率。
+                    </p>
+                    <div class="research-tags">
+                        <span class="research-tag">Project Lead</span>
+                        <span class="research-tag">LLM</span>
+                        <span class="research-tag">Agent Systems</span>
+                        <span class="research-tag">RAG</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
         <div class="container">
-            <h2 class="section-title">技能专长</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>机器学习 & AI</h3>
-                    <div class="skill-items">
-                        <span class="skill-tag">PyTorch</span>
-                        <span class="skill-tag">TensorFlow</span>
-                        <span class="skill-tag">Transformers</span>
-                        <span class="skill-tag">LLM</span>
-                        <span class="skill-tag">RAG</span>
-                        <span class="skill-tag">Agent Systems</span>
+            <h2 class="section-title">科研日常</h2>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-card-header">
+                        <h3>深度学习模型调参的一些心得</h3>
+                        <div class="blog-date">2024年12月15日</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <p>
+                            最近在调试SyAGram模型时遇到了一些有趣的问题。发现在处理蛋白质序列数据时，
+                            学习率的选择对模型收敛速度有着显著影响。记录一下这次的调参经验...
+                        </p>
+                        <a href="#" class="read-more">阅读全文 →</a>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3>编程语言</h3>
-                    <div class="skill-items">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">LaTeX</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">Bash</span>
+
+                <div class="blog-card">
+                    <div class="blog-card-header">
+                        <h3>参加IEEE BIBM会议的准备工作</h3>
+                        <div class="blog-date">2024年12月10日</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <p>
+                            两篇论文都投到了IEEE BIBM 2025，现在开始准备可能的会议展示。
+                            整理了一下研究思路和实验结果，希望能够清晰地向同行展示我们的工作...
+                        </p>
+                        <a href="#" class="read-more">阅读全文 →</a>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3>数据科学</h3>
-                    <div class="skill-items">
-                        <span class="skill-tag">Pandas</span>
-                        <span class="skill-tag">NumPy</span>
-                        <span class="skill-tag">Scikit-learn</span>
-                        <span class="skill-tag">Matplotlib</span>
-                        <span class="skill-tag">Jupyter</span>
+
+                <div class="blog-card">
+                    <div class="blog-card-header">
+                        <h3>从工业界回到学术界的思考</h3>
+                        <div class="blog-date">2024年11月28日</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <p>
+                            在深圳山见智能工作的这段时间让我对LLM的工程化有了更深的理解。
+                            现在重新回到学术研究，发现理论与实践的结合是多么重要...
+                        </p>
+                        <a href="#" class="read-more">阅读全文 →</a>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3>工具 & 平台</h3>
-                    <div class="skill-items">
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">Milvus</span>
-                        <span class="skill-tag">ComfyUI</span>
-                        <span class="skill-tag">Linux</span>
+
+                <div class="blog-card">
+                    <div class="blog-card-header">
+                        <h3>Agent系统设计的一些思考</h3>
+                        <div class="blog-date">2024年11月20日</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <p>
+                            在开发GAgent框架时，我一直在思考如何让智能体系统更加可靠。
+                            分层任务分解的想法来源于人类解决复杂问题的方式...
+                        </p>
+                        <a href="#" class="read-more">阅读全文 →</a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-card-header">
+                        <h3>数学建模竞赛的收获</h3>
+                        <div class="blog-date">2024年11月15日</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <p>
+                            回想起大学期间参加CUMCM的经历，那时候熬夜建模、调试算法的日子。
+                            虽然辛苦，但那种解决问题的成就感至今难忘...
+                        </p>
+                        <a href="#" class="read-more">阅读全文 →</a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-card-header">
+                        <h3>科研路上的迷茫与坚持</h3>
+                        <div class="blog-date">2024年11月08日</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <p>
+                            每个做研究的人都会遇到瓶颈期，我也不例外。
+                            分享一下最近的一些思考，以及如何在迷茫中找到前进的方向...
+                        </p>
+                        <a href="#" class="read-more">阅读全文 →</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <!-- Papers Section -->
+    <section id="papers" class="papers">
         <div class="container">
-            <h2 class="section-title">精选项目</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/syagram.jpg" alt="SyAGram项目">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-file-alt"></i></a>
-                                <a href="https://github.com/yiyabo" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
+            <h2 class="section-title">文献阅读</h2>
+            <div class="paper-list">
+                <div class="paper-item">
+                    <h3 class="paper-title">Attention Is All You Need</h3>
+                    <p class="paper-authors">Vaswani et al., 2017</p>
+                    <p class="paper-venue">NIPS 2017</p>
+                    <p class="paper-abstract">
+                        这篇开创性的论文提出了Transformer架构，彻底改变了自然语言处理领域。
+                        我特别关注其中的多头注意力机制，这对我在PHESA项目中的边集注意力设计有很大启发。
+                        Transformer的并行化优势和长距离依赖建模能力为后续的大语言模型奠定了基础。
+                    </p>
+                    <div class="academic-note">
+                        <strong>个人思考：</strong>注意力机制的本质是学习输入序列中不同位置之间的相关性。
+                        在我的研究中，我尝试将这种思想扩展到图结构数据，通过边集注意力来捕获分子间的相互作用。
                     </div>
-                    <div class="project-content">
-                        <h3>SyAGram: 双组件抗革兰阴性菌肽能素框架</h3>
-                        <p>提出了一个双组件框架，用于抗革兰阴性菌抗菌肽能素的分类和生成，实现了91.53% AUC分类精度。</p>
-                        <div class="project-tech">
-                            <span>PyTorch</span>
-                            <span>BiLSTM</span>
-                            <span>ESM-2</span>
-                            <span>Diffusion Model</span>
-                        </div>
+                    <div class="paper-links">
+                        <a href="#" class="paper-link">PDF</a>
+                        <a href="#" class="paper-link">笔记</a>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/phesa.jpg" alt="PHESA项目">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-file-alt"></i></a>
-                                <a href="https://github.com/yiyabo" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
+                <div class="paper-item">
+                    <h3 class="paper-title">Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks</h3>
+                    <p class="paper-authors">Lewis et al., 2020</p>
+                    <p class="paper-venue">NIPS 2020</p>
+                    <p class="paper-abstract">
+                        RAG模型结合了参数化记忆和非参数化记忆，为知识密集型任务提供了新的解决方案。
+                        这篇论文对我在GAgent项目中设计检索增强推理系统有重要指导意义。
+                        特别是如何平衡检索质量和生成质量的权衡问题。
+                    </p>
+                    <div class="academic-note">
+                        <strong>实践应用：</strong>在工业项目中，我发现RAG系统的关键在于检索器的设计和知识库的构建。
+                        向量数据库的选择、embedding模型的优化都会显著影响最终效果。
                     </div>
-                    <div class="project-content">
-                        <h3>PHESA: 物理信息分层边集注意力模型</h3>
-                        <p>基于物理信息的分层边集注意力框架，用于结合亲和力预测，在PDBbind数据集上达到SOTA性能。</p>
-                        <div class="project-tech">
-                            <span>Graph Neural Networks</span>
-                            <span>Attention Mechanism</span>
-                            <span>Physics-informed ML</span>
-                            <span>PyTorch</span>
-                        </div>
+                    <div class="paper-links">
+                        <a href="#" class="paper-link">PDF</a>
+                        <a href="#" class="paper-link">笔记</a>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/gagent.jpg" alt="GAgent项目">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="https://github.com/yiyabo" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
+                <div class="paper-item">
+                    <h3 class="paper-title">Physics-Informed Neural Networks</h3>
+                    <p class="paper-authors">Raissi et al., 2019</p>
+                    <p class="paper-venue">Journal of Computational Physics</p>
+                    <p class="paper-abstract">
+                        物理信息神经网络将物理定律作为约束条件融入神经网络训练过程中。
+                        这种方法在科学计算领域展现出巨大潜力，也是我AI for Science研究方向的重要参考。
+                        PHESA项目中的物理信息设计就借鉴了这一思想。
+                    </p>
+                    <div class="academic-note">
+                        <strong>研究启发：</strong>如何将领域知识有效地融入深度学习模型是一个重要问题。
+                        不仅仅是物理定律，生物学、化学等领域的先验知识都可以通过类似方式引入。
                     </div>
-                    <div class="project-content">
-                        <h3>GAgent: 分层任务分解智能体框架</h3>
-                        <p>通过分层分解方法减少LLM幻觉，实现40%错误减少，在复杂科学工作流中保持92%成功率。</p>
-                        <div class="project-tech">
-                            <span>LLM</span>
-                            <span>Agent Systems</span>
-                            <span>RAG</span>
-                            <span>Multi-modal</span>
-                        </div>
+                    <div class="paper-links">
+                        <a href="#" class="paper-link">PDF</a>
+                        <a href="#" class="paper-link">笔记</a>
+                    </div>
+                </div>
+
+                <div class="paper-item">
+                    <h3 class="paper-title">Language Models are Few-Shot Learners</h3>
+                    <p class="paper-authors">Brown et al., 2020</p>
+                    <p class="paper-venue">NIPS 2020</p>
+                    <p class="paper-abstract">
+                        GPT-3展示了大规模语言模型的惊人能力，特别是在少样本学习方面的表现。
+                        这篇论文让我思考如何在特定领域（如生物信息学）中利用大模型的能力，
+                        同时避免在专业任务上的幻觉问题。
+                    </p>
+                    <div class="academic-note">
+                        <strong>工程思考：</strong>在实际部署大模型时，如何平衡模型能力和计算成本是一个重要考量。
+                        模型压缩、知识蒸馏等技术在工业应用中变得越来越重要。
+                    </div>
+                    <div class="paper-links">
+                        <a href="#" class="paper-link">PDF</a>
+                        <a href="#" class="paper-link">笔记</a>
                     </div>
                 </div>
             </div>
