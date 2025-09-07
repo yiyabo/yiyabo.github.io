@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://yiyabo.github.io/sitemap.xml
+
+# Disallow certain paths if needed
+# Disallow: /private/
+# Disallow: /temp/

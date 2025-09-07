@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Xinxiang Wang 的项目展示 - 查看我的最新作品和技术项目">
+    <title>项目展示 - Xinxiang Wang</title>
+    
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Xinxiang Wang</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">关于我</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link active">项目</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#skills" class="nav-link">技能</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">联系</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Hero -->
+    <section class="projects-hero">
+        <div class="container">
+            <h1>我的项目</h1>
+            <p>探索我创建的各种项目，从Web应用到移动应用，每个项目都体现了我对技术的热情和创新思维。</p>
+        </div>
+    </section>
+
+    <!-- Project Categories -->
+    <section class="project-categories">
+        <div class="container">
+            <div class="category-filters">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="web">Web应用</button>
+                <button class="filter-btn" data-filter="mobile">移动应用</button>
+                <button class="filter-btn" data-filter="desktop">桌面应用</button>
+                <button class="filter-btn" data-filter="ai">AI/ML</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Projects -->
+    <section class="detailed-projects">
+        <div class="container">
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card detailed" data-category="web">
+                    <div class="project-image">
+                        <img src="assets/project1-detail.jpg" alt="智能电商平台">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://demo-ecommerce.example.com" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/yiyabo/ecommerce-platform" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>智能电商平台</h3>
+                            <span class="project-status">已完成</span>
+                        </div>
+                        <p>一个功能完整的电商平台，集成了用户认证、商品管理、购物车、支付系统和订单跟踪。采用微服务架构，支持高并发访问。</p>
+                        
+                        <div class="project-features">
+                            <h4>主要功能</h4>
+                            <ul>
+                                <li>响应式用户界面设计</li>
+                                <li>智能商品推荐系统</li>
+                                <li>多种支付方式集成</li>
+                                <li>实时库存管理</li>
+                                <li>订单状态实时跟踪</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Redis</span>
+                            <span>Docker</span>
+                            <span>AWS</span>
+                        </div>
+                        
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number">15,000+</span>
+                                <span class="stat-label">用户</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">99.9%</span>
+                                <span class="stat-label">可用性</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">3个月</span>
+                                <span class="stat-label">开发周期</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card detailed" data-category="web">
+                    <div class="project-image">
+                        <img src="assets/project2-detail.jpg" alt="团队协作平台">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://teamwork.example.com" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/yiyabo/team-collaboration" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>团队协作平台</h3>
+                            <span class="project-status">进行中</span>
+                        </div>
+                        <p>为远程团队设计的协作平台，提供项目管理、任务分配、文件共享和实时通信功能，提高团队工作效率。</p>
+                        
+                        <div class="project-features">
+                            <h4>核心特性</h4>
+                            <ul>
+                                <li>看板式项目管理</li>
+                                <li>实时聊天和视频会议</li>
+                                <li>文档协作编辑</li>
+                                <li>时间跟踪和报告</li>
+                                <li>权限管理系统</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Python</span>
+                            <span>PostgreSQL</span>
+                            <span>WebSocket</span>
+                            <span>WebRTC</span>
+                        </div>
+                        
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label">团队</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">85%</span>
+                                <span class="stat-label">完成度</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">6个月</span>
+                                <span class="stat-label">开发中</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card detailed" data-category="ai">
+                    <div class="project-image">
+                        <img src="assets/project3-detail.jpg" alt="智能数据分析平台">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://analytics.example.com" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/yiyabo/ai-analytics" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>智能数据分析平台</h3>
+                            <span class="project-status">已完成</span>
+                        </div>
+                        <p>基于机器学习的数据分析平台，能够自动识别数据模式，生成预测模型，并提供交互式可视化报告。</p>
+                        
+                        <div class="project-features">
+                            <h4>技术亮点</h4>
+                            <ul>
+                                <li>自动化数据预处理</li>
+                                <li>机器学习模型训练</li>
+                                <li>交互式数据可视化</li>
+                                <li>预测分析和趋势预测</li>
+                                <li>自定义报告生成</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>D3.js</span>
+                            <span>Flask</span>
+                            <span>Pandas</span>
+                            <span>Scikit-learn</span>
+                        </div>
+                        
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number">1TB+</span>
+                                <span class="stat-label">数据处理</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">95%</span>
+                                <span class="stat-label">准确率</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">4个月</span>
+                                <span class="stat-label">开发周期</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card detailed" data-category="mobile">
+                    <div class="project-image">
+                        <img src="assets/project4-detail.jpg" alt="健康管理App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://apps.apple.com/health-tracker" class="project-link" target="_blank">
+                                    <i class="fab fa-app-store-ios"></i>
+                                </a>
+                                <a href="https://github.com/yiyabo/health-tracker" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>智能健康管理App</h3>
+                            <span class="project-status">已发布</span>
+                        </div>
+                        <p>一款综合性健康管理应用，集成了运动跟踪、饮食记录、睡眠监测和健康数据分析功能。</p>
+                        
+                        <div class="project-features">
+                            <h4>应用特色</h4>
+                            <ul>
+                                <li>多种运动模式跟踪</li>
+                                <li>智能饮食建议</li>
+                                <li>睡眠质量分析</li>
+                                <li>健康数据可视化</li>
+                                <li>社交分享功能</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-tech">
+                            <span>React Native</span>
+                            <span>TypeScript</span>
+                            <span>Firebase</span>
+                            <span>HealthKit</span>
+                            <span>Google Fit</span>
+                        </div>
+                        
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number">50,000+</span>
+                                <span class="stat-label">下载量</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">4.8</span>
+                                <span class="stat-label">应用评分</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">5个月</span>
+                                <span class="stat-label">开发周期</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card detailed" data-category="desktop">
+                    <div class="project-image">
+                        <img src="assets/project5-detail.jpg" alt="代码编辑器">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://editor.example.com" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/yiyabo/code-editor" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>轻量级代码编辑器</h3>
+                            <span class="project-status">开源</span>
+                        </div>
+                        <p>一个现代化的跨平台代码编辑器，支持多种编程语言，具有智能代码补全、语法高亮和插件系统。</p>
+                        
+                        <div class="project-features">
+                            <h4>编辑器特性</h4>
+                            <ul>
+                                <li>多语言语法支持</li>
+                                <li>智能代码补全</li>
+                                <li>主题和插件系统</li>
+                                <li>Git集成</li>
+                                <li>终端集成</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-tech">
+                            <span>Electron</span>
+                            <span>TypeScript</span>
+                            <span>Monaco Editor</span>
+                            <span>Node.js</span>
+                            <span>CSS3</span>
+                        </div>
+                        
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number">2,000+</span>
+                                <span class="stat-label">GitHub Stars</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">100+</span>
+                                <span class="stat-label">贡献者</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">开源</span>
+                                <span class="stat-label">MIT许可</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card detailed" data-category="ai">
+                    <div class="project-image">
+                        <img src="assets/project6-detail.jpg" alt="AI聊天机器人">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://chatbot.example.com" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/yiyabo/ai-chatbot" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>智能客服机器人</h3>
+                            <span class="project-status">已部署</span>
+                        </div>
+                        <p>基于自然语言处理技术的智能客服系统，能够理解用户意图并提供准确的回答，大幅提升客服效率。</p>
+                        
+                        <div class="project-features">
+                            <h4>AI能力</h4>
+                            <ul>
+                                <li>自然语言理解</li>
+                                <li>多轮对话管理</li>
+                                <li>情感分析</li>
+                                <li>知识库集成</li>
+                                <li>多语言支持</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>BERT</span>
+                            <span>FastAPI</span>
+                            <span>Redis</span>
+                            <span>Elasticsearch</span>
+                            <span>Docker</span>
+                        </div>
+                        
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number">10,000+</span>
+                                <span class="stat-label">日对话</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">92%</span>
+                                <span class="stat-label">准确率</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">24/7</span>
+                                <span class="stat-label">服务时间</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Xinxiang Wang. 保留所有权利。</p>
+                <p>使用 ❤️ 和现代技术构建</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+</html>

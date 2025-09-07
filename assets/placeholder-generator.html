@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>图片占位符生成器</title>
+</head>
+<body>
+    <script>
+        // 生成占位符图片的简单脚本
+        function generatePlaceholder(width, height, text, filename) {
+            const canvas = document.createElement('canvas');
+            canvas.width = width;
+            canvas.height = height;
+            const ctx = canvas.getContext('2d');
+            
+            // 渐变背景
+            const gradient = ctx.createLinearGradient(0, 0, width, height);
+            gradient.addColorStop(0, '#667eea');
+            gradient.addColorStop(1, '#764ba2');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, width, height);
+            
+            // 文字
+            ctx.fillStyle = 'white';
+            ctx.font = 'bold 24px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText(text, width/2, height/2);
+            
+            // 下载
+            const link = document.createElement('a');
+            link.download = filename;
+            link.href = canvas.toDataURL();
+            link.click();
+        }
+        
+        // 生成所需的占位符图片
+        setTimeout(() => {
+            generatePlaceholder(400, 300, '个人照片', 'profile.jpg');
+            generatePlaceholder(600, 400, '电商平台', 'project1.jpg');
+            generatePlaceholder(600, 400, '协作平台', 'project2.jpg');
+            generatePlaceholder(600, 400, '数据分析', 'project3.jpg');
+            generatePlaceholder(800, 500, '电商平台详情', 'project1-detail.jpg');
+            generatePlaceholder(800, 500, '协作平台详情', 'project2-detail.jpg');
+            generatePlaceholder(800, 500, '数据分析详情', 'project3-detail.jpg');
+            generatePlaceholder(800, 500, '健康管理App', 'project4-detail.jpg');
+            generatePlaceholder(800, 500, '代码编辑器', 'project5-detail.jpg');
+            generatePlaceholder(800, 500, 'AI聊天机器人', 'project6-detail.jpg');
+        }, 1000);
+    </script>
+    <p>占位符图片生成中...</p>
+</body>
+</html>
